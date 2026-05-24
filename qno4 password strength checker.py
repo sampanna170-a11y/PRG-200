@@ -28,3 +28,9 @@ for password in passwords:
 
     if len(missing) == 0:
         print("Strong password")
+  else:
+        print("Weak password")
+        print("Missing criteria:")
+
+        for item in missing:
+            print("-", item)
