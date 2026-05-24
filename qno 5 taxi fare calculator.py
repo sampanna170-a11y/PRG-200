@@ -19,3 +19,12 @@ for trip in trips:
     elif distance <= 10:
         extra_km = distance - 2
         fare = 150 + (extra_km * 35)
+  # Beyond 10 km
+    else:
+        fare = 150 + (8 * 35)
+        extra_km = distance - 10
+        fare += extra_km * 28
+
+    # Night surcharge
+    if hour >= 22 or hour < 5:
+        fare += fare * 0.10
