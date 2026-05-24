@@ -13,3 +13,8 @@ elif amount > balance:
 
 elif daily_withdrawn + amount > daily_limit:
     print("Daily withdrawal limit reached.")
+
+else:
+    balance -= amount
+    print("Withdrawal successful.")
+    print("Your current balance after withdrawal: NPR", balance)
