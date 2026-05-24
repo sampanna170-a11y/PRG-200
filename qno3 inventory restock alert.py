@@ -7,3 +7,7 @@ inventory = [
     {"item": "Chicken", "stock": 0, "threshold": 4},
     {"item": "Cooking Oil", "stock": 2, "threshold": 3},
 ]
+restock_count = 0
+
+for product in inventory:
+    
