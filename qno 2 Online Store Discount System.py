@@ -13,3 +13,8 @@ elif purchase < 5000:
 
 elif purchase < 15000:
     discount = 0.10
+
+else:
+    discount = 0.20
+
+# Apply main discount
