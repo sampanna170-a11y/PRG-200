@@ -8,3 +8,8 @@ discount = 0
 if purchase < 1000:
     discount = 0
 
+elif purchase < 5000:
+    discount = 0.05
+
+elif purchase < 15000:
+    discount = 0.10
