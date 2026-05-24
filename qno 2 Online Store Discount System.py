@@ -18,3 +18,10 @@ else:
     discount = 0.20
 
 # Apply main discount
+discounted_price = purchase - (purchase * discount)
+
+# Loyalty member extra discount
+if member.lower() == "yes":
+    discounted_price -= discounted_price * 0.05
+
+print("Final payable amount: NPR", round(discounted_price, 2))
