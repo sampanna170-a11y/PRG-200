@@ -6,3 +6,8 @@ trips = [
     {"distance": 8.5, "hour": 10},
     {"distance": 2.0, "hour": 23},
 ]
+
+for trip in trips:
+
+    distance = trip["distance"]
+    hour = trip["hour"]
