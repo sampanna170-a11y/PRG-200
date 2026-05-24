@@ -15,3 +15,10 @@ for password in passwords:
     # Check uppercase
     if not any(char.isupper() for char in password):
         missing.append("One uppercase letter")
+ # Check lowercase
+    if not any(char.islower() for char in password):
+        missing.append("One lowercase letter")
+
+    # Check digit
+    if not any(char.isdigit() for char in password):
+        missing.append("One digit")
