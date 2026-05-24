@@ -22,3 +22,9 @@ for password in passwords:
     # Check digit
     if not any(char.isdigit() for char in password):
         missing.append("One digit")
+ # Check special character
+    if not any(char in special_chars for char in password):
+        missing.append("One special character")
+
+    if len(missing) == 0:
+        print("Strong password")
