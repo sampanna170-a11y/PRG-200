@@ -8,3 +8,10 @@ for password in passwords:
     print("\nChecking password:", password)
 
     missing = []
+ # Check length
+    if len(password) < 8:
+        missing.append("At least 8 characters")
+
+    # Check uppercase
+    if not any(char.isupper() for char in password):
+        missing.append("One uppercase letter")
