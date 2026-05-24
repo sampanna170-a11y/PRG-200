@@ -28,3 +28,8 @@ for trip in trips:
     # Night surcharge
     if hour >= 22 or hour < 5:
         fare += fare * 0.10
+    print("Distance:", distance, "km")
+    print("Travel Hour:", hour)
+    print("Taxi Fare: NPR", round(fare, 2))
+    print("---------------------------")
+    
