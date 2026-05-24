@@ -11,3 +11,11 @@ for trip in trips:
 
     distance = trip["distance"]
     hour = trip["hour"]
+ # Base fare
+    if distance <= 2:
+        fare = 150
+
+    # Between 2 km and 10 km
+    elif distance <= 10:
+        extra_km = distance - 2
+        fare = 150 + (extra_km * 35)
