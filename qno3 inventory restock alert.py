@@ -10,4 +10,10 @@ inventory = [
 restock_count = 0
 
 for product in inventory:
-    
+
+     if product["stock"] < product["threshold"]:
+        print("Restock Alert:", product["item"])
+        restock_count += 1
+
+print("Total items needing restock:", restock_count)
+
